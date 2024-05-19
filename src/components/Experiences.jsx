@@ -6,7 +6,7 @@ function Experiences() {
   const { heading, data } = editableData.experiences;
 
   return (
-    <section className="bg-gray-100 py-20">
+    <section id="experiences" className="bg-gray-100 py-20">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-4xl font-medium pb-8  text-center">{heading}</h2>

@@ -2,13 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import editableData from "@/data/editableData.json";
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
+const { navMenu } = editableData.navBar;
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,7 +38,7 @@ export default function Navbar() {
     <div className="">
       <header
         className={`inset-x-0 top-0 z-50 fixed transition-all ${
-          scrolling ? "bg-white bg-opacity-5" : "bg-transparent opacity-100"
+          scrolling ? "bg-white bg-opacity-70" : "bg-transparent opacity-100"
         }`}
       >
         <nav
@@ -53,7 +49,7 @@ export default function Navbar() {
         >
           <div className="flex ">
             <Link href="#" className="m-1 p-2">
-              <h2 className="text-lg text-black">{"<Atul />"}</h2>
+              <h2 className="text-2xl text-black">{"<Atul />"}</h2>
             </Link>
           </div>
 
@@ -86,34 +82,58 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:flex lg:gap-x-6">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-sm font-semibold leading-2 text-gray-900"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navMenu.map((item) =>
+              item.name === "Resume" ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  download
+                  className="text-md font-semibold leading-2 text-gray-900"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="text-md font-semibold leading-2 text-gray-900"
+                >
+                  {item.name}
+                </Link>
+              )
+            )}
           </div>
         </nav>
         {mobileMenuOpen && (
           <div
             className={`absolute left-0 w-full  ${
-              scrolling ? "bg-white bg-opacity-5" : "bg-transparent opacity-100"
+              scrolling
+                ? "bg-white bg-opacity-70"
+                : "bg-transparent opacity-100"
             }`}
           >
             <div className="max-w-3xl mx-auto p-6">
               <div className="space-y-1">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    {item.name}
-                  </a>
-                ))}
+                {navMenu.map((item) =>
+                  item.name === "Resume" ? (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      download
+                      className="block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="block rounded-lg px-3 py-1 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </Link>
+                  )
+                )}
               </div>
             </div>
           </div>

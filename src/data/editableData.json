@@ -1,0 +1,151 @@
+{
+    "navBar": {
+        "navMenu": [
+            {
+                "name": "Projects",
+                "href": "/#projects"
+            },
+            {
+                "name": "Resume",
+                "href": "/resume.pdf"
+            },
+            {
+                "name": "About",
+                "href": "/#about"
+            },
+            {
+                "name": "Skills",
+                "href": "/#skills"
+            }
+        ]
+    },
+    "mainBody": {
+        "name": "Atul Patel",
+        "message": " Passionate about changing the world with technology. "
+    },
+    "about": {
+        "heading": "About Me",
+        "imageLink": "/atul.jpg",
+        "imageSize": 370,
+        "message": "My name is Atul Patel. I’m a post-graduate of 2019 from Integral University Lucknow with a degree in Masters of Computer Application . I'm passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
+        "resume": "/resume.pdf"
+    },
+    "leadership": {
+        "heading": "Leadership",
+        "message": "As a React developer with leadership experience, I bring technical expertise, project management skills, and strong communication abilities to the table. I have a proven track record of building large-scale applications, optimizing code for performance, and implementing best practices. Additionally, I have experience leading teams and projects, creating and maintaining project plans, managing timelines and budgets, and ensuring timely delivery of high-quality work. I excel at communicating effectively with team members, stakeholders, and clients, both verbally and in writing, and am a skilled listener who can provide clear and constructive feedback. I am also passionate about mentoring and training other developers to help them develop their skills and achieve their goals. With my ability to solve complex technical problems and think creatively, I am always up-to-date with the latest developments in React and related technologies, and am able to innovate and inspire a positive, collaborative work environment.",
+        "images": [
+            {
+                "name": "/1.png"
+            },
+            {
+                "name": "/2.png"
+            },
+            {
+                "name": "/3.png"
+            },
+            {
+                "name": "/4.png"
+            },
+            {
+                "name": "/5.png"
+            },
+            {
+                "name": "/6.png"
+            },
+            {
+                "name": "/7.png"
+            },
+            {
+                "name": "/8.png"
+            }
+        ]
+    },
+    "skills": {
+        "heading": "Skills",
+        "hardSkills": [
+            {
+                "name": "React",
+                "value": 90
+            },
+            {
+                "name": "JavaScript",
+                "value": 90
+            },
+            {
+                "name": "Data Structures",
+                "value": 65
+            },
+            {
+                "name": "HTML/CSS",
+                "value": 55
+            },
+            {
+                "name": "TypeScript",
+                "value": 80
+            },
+            {
+                "name": "SQL",
+                "value": 75
+            }
+        ],
+        "softSkills": [
+            {
+                "name": "Goal-Oriented",
+                "value": 80
+            },
+            {
+                "name": "Collaboration",
+                "value": 90
+            },
+            {
+                "name": "Positivity",
+                "value": 75
+            },
+            {
+                "name": "Adaptability",
+                "value": 85
+            },
+            {
+                "name": "Problem Solving",
+                "value": 75
+            },
+            {
+                "name": "Empathy",
+                "value": 90
+            },
+            {
+                "name": "Organization",
+                "value": 85
+            },
+            {
+                "name": "Creativity",
+                "value": 90
+            }
+        ]
+    },
+    "footer": {
+        "heading": "Get In Touch",
+        "message": "I'm currently looking for full-time React Developer/Frontend Developer opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+        "email": "patelatulpatel@gmail.com"
+    },
+    "experiences": {
+        "heading": "Experiences",
+        "data": [
+            {
+                "role": "React Developer",
+                "Brandlogo": "/simpana.png",
+                "date": "Aug 2020 – May 2022"
+            },
+            {
+                "role": "Senior Software Engineer",
+                "Brandlogo": "/vendify.png",
+                "date": "May 2022 – March 2023"
+            },
+            {
+                "role": "React Developer",
+                "Brandlogo": "/paceTrader.png",
+                "date": "March 2023 – Present"
+            }
+        ]
+    }
+}

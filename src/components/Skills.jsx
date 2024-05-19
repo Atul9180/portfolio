@@ -85,7 +85,7 @@ function Skills() {
   };
 
   return (
-    <section className="bg-gray-300 body-font py-4">
+    <section id="skills" className="bg-gray-300 body-font py-4">
       <h1 className="sm:text-5xl text-4xl pb-3 font-medium text-gray-900 text-center py-10">
         {heading}
       </h1>

@@ -8,7 +8,7 @@ function Leadership() {
   const { heading, message, images } = editableData.leadership;
 
   return (
-    <div className=" p-7 sm:p-2 lg:p-9 bg-gray-200 ">
+    <div id="leadership" className=" p-7 sm:p-2 lg:p-9 bg-gray-200 ">
       <div className="flex flex-col text-center w-full mb-4 ">
         <h2 className="text-4xl font-normal mb-6 text-center">{heading}</h2>
       </div>

@@ -1,10 +1,20 @@
 // components/HeroSection.js
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import editableData from "@/data/editableData.json";
 
 export default function HeroSection() {
   const { name, message } = editableData.mainBody;
+
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="hero flex flex-col justify-center w-full h-screen bg-gradient-to-br from-red-500 via-purple-500 to-blue-500">
       <div className="flex flex-col justify-center items-center text-white">
@@ -53,7 +63,10 @@ export default function HeroSection() {
 
         {/* end of icons */}
 
-        <button class="relative inline-flex mt-3 items-center justify-center p-0.5 mb-2 me-2 bg-transparent overflow-hidden text-sm font-medium text-white hover:text-black hover:bg-white rounded-lg group  ">
+        <button
+          class="relative inline-flex mt-3 items-center justify-center p-0.5 mb-2 me-2 bg-transparent overflow-hidden text-sm font-medium text-white hover:text-black hover:bg-white rounded-lg group  "
+          onClick={scrollToAbout}
+        >
           <span class="relative px-5 py-2.5 transition-all ease-in duration-75 outline hover:outline-none ">
             More about me
           </span>
