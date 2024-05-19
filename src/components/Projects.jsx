@@ -29,7 +29,7 @@ const Projects = () => {
           {repos.map((repo) => (
             <div
               key={repo.id}
-              className="card shadow-lg p-4 mb-5 bg-white rounded-xl"
+              className="card shadow-lg p-4 mb-5 bg-white rounded-xl hover:-translate-y-1.5 duration-900  ease-in-out "
             >
               <div className="card-body">
                 <h5 className="card-title font-semibold p-3 mt-3 mb-3">
@@ -39,7 +39,7 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                   <Link
                     href={repo.clone_url}
-                    className="flex items-center outline rounded-sm justify-center py-1 text-gray-600 hover:bg-gray-600 hover:text-white "
+                    className="flex items-center outline rounded-sm justify-center py-1 text-gray-600  "
                   >
                     <i className="fab fa-github"></i>
                     <span>Clone Project</span>

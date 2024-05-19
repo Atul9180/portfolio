@@ -9,8 +9,8 @@ function Experiences() {
     <section className="bg-gray-100 py-20">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-6 text-center">{heading}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-4xl font-medium pb-8  text-center">{heading}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-auto">
             {data.map((data, index) => (
               <div className="lg:w-1/2 lg:px-4 pb-5 text-center" key={index}>
                 <Image
