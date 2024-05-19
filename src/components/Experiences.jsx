@@ -12,7 +12,10 @@ function Experiences() {
           <h2 className="text-4xl font-medium pb-8  text-center">{heading}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-auto">
             {data.map((data, index) => (
-              <div className="lg:w-1/2 lg:px-4 pb-5 text-center" key={index}>
+              <div
+                className="sm:py-10 lg:w-1/2 lg:px-4 pb-5 text-center"
+                key={index}
+              >
                 <Image
                   className="mx-auto mb-2.5 bg-white"
                   width={300}

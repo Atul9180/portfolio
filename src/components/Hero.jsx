@@ -8,8 +8,8 @@ export default function HeroSection() {
   return (
     <div className="hero flex flex-col justify-center w-full h-screen bg-gradient-to-br from-red-500 via-purple-500 to-blue-500">
       <div className="flex flex-col justify-center items-center text-white">
-        <h1 className="text-4xl pb-3 text-center">{`${name}`}</h1>
-        <p className="text-sm text-center pb-">{`${message}`}</p>
+        <h1 className="sm:text-4xl text-6xl pb-3 lg:pb-5 text-center ">{`${name}`}</h1>
+        <p className="text-sm text-center py-3">{`${message}`}</p>
 
         {/* icons */}
         <div class=" p-5  mx-3 my-4 ">
