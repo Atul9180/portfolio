@@ -29,7 +29,7 @@ const Footer = () => {
           aria-label="GitHub"
           className="text-dark"
         >
-          <span className="inline-block px-2 py-1 text-xs font-semibold leading-none text-white bg-gray-700 rounded-md">{`${mainBody.firstName} ${mainBody.lastName}`}</span>
+          <span className="inline-block px-2 py-1 text-xs font-semibold leading-none text-white bg-gray-700 rounded-md">{`${mainBody.name}`}</span>
         </Link>
         using <i className="fab fa-react" />
         <p></p>
